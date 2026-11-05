@@ -13,6 +13,7 @@ public class CoffeeMakerTest {
     CoffeeMaker coffeeMaker;
     CoffeeMaker coffeeMaker1;
     CoffeeMaker coffeeMaker2;
+    CoffeeMaker coffeeMaker3;
 
     Recipe coffee = new Recipe();
     Recipe hotcoco = new Recipe();
@@ -68,6 +69,8 @@ public class CoffeeMakerTest {
         coffeeMaker2.addRecipe(cream);
         coffeeMaker2.addRecipe(sugar);
         coffeeMaker2.addRecipe(cocoa);
+
+        coffeeMaker3 = new CoffeeMaker();
     }
 
     @AfterEach
@@ -75,10 +78,20 @@ public class CoffeeMakerTest {
         coffeeMaker = null;
         coffeeMaker1 = null;
         coffeeMaker2 = null;
+        coffeeMaker3 = null;
     }
 
     @Test
     void testAddInventory() {
+        coffeeMaker3.addInventory(1, 0, 0,0);
+        assertEquals(16, coffeeMaker3.checkInventory().getCoffee());
+        coffeeMaker3.addInventory(0, 1, 0,0);
+        assertEquals(16, coffeeMaker3.checkInventory().getMilk());
+        coffeeMaker3.addInventory(0, 0, 1,0);
+        assertEquals(16, coffeeMaker3.checkInventory().getSugar());
+        coffeeMaker3.addInventory(0, 0, 0,1);
+        assertEquals(16, coffeeMaker3.checkInventory().getChocolate());
+
         int[] i = {1, 1, 1, 1};
         for (int x = 0; x <= 1; x++) {
             for (int y = 0; y <= 3; y++) {
