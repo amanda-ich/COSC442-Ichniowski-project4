@@ -82,7 +82,6 @@ public class RecipeTest {
         assertEquals(0, test.getAmtChocolate());
         test.setAmtChocolate(-1);
         assertEquals(0, test.getAmtChocolate());
-        assertFalse(test.getAmtChocolate() < 0); // added to kill mutants
     }
 
     @Test
@@ -95,7 +94,6 @@ public class RecipeTest {
         assertEquals(0, test.getAmtCoffee());
         test.setAmtCoffee(-1);
         assertEquals(0, test.getAmtCoffee());
-        assertFalse(test.getAmtCoffee() < 0); // added to kill mutants
     }
 
     @Test
@@ -108,7 +106,6 @@ public class RecipeTest {
         assertEquals(0, test.getAmtMilk());
         test.setAmtMilk(-1);
         assertEquals(0, test.getAmtMilk());
-        assertFalse(test.getAmtMilk() < 0); // added to kill mutants
     }
 
     @Test
@@ -121,7 +118,6 @@ public class RecipeTest {
         assertEquals(0, test.getAmtSugar());
         test.setAmtSugar(-1);
         assertEquals(0, test.getAmtSugar());
-        assertFalse(test.getAmtSugar() < 0); // added to kill mutants
     }
 
     @Test
@@ -138,7 +134,6 @@ public class RecipeTest {
         assertEquals(0, test.getPrice());
         test.setPrice(-1);
         assertEquals(0, test.getPrice());
-        assertFalse(test.getPrice() < 0); // added to kill mutants
     }
 
     @Test

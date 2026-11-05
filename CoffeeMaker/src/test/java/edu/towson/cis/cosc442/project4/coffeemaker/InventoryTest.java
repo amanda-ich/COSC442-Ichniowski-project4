@@ -16,11 +16,6 @@ public class InventoryTest {
     void setup() {
         inventory = new Inventory();
 
-        inventory.setCoffee(15);
-        inventory.setMilk(15);
-        inventory.setSugar(15);
-        inventory.setChocolate(15);
-
         coffee.setName("coffee");
         coffee.setPrice(5);
         coffee.setAmtChocolate(0);
@@ -70,7 +65,6 @@ public class InventoryTest {
         assertEquals(0, inventory.getChocolate());
         inventory.setChocolate(-1);
         assertEquals(0, inventory.getChocolate());
-        assertFalse(inventory.getChocolate() < 0); // added to kill mutants
     }
 
     @Test
@@ -81,7 +75,6 @@ public class InventoryTest {
         assertEquals(0, inventory.getCoffee());
         inventory.setCoffee(-1);
         assertEquals(0, inventory.getCoffee());
-        assertFalse(inventory.getCoffee() < 0); // added to kill mutants
     }
 
     @Test
@@ -92,7 +85,6 @@ public class InventoryTest {
         assertEquals(0, inventory.getMilk());
         inventory.setMilk(-1);
         assertEquals(0, inventory.getMilk());
-        assertFalse(inventory.getMilk() < 0); // added to kill mutants
     }
 
     @Test
@@ -103,7 +95,6 @@ public class InventoryTest {
         assertEquals(0, inventory.getSugar());
         inventory.setSugar(-1);
         assertEquals(0, inventory.getSugar());
-        assertFalse(inventory.getSugar() < 0); // added to kill mutants
     }
 
     @Test
