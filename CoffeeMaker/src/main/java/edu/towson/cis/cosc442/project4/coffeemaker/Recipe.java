@@ -24,7 +24,7 @@ public class Recipe {
      * @param amtChocolate The amount of chocolate to set.
      */
     public void setAmtChocolate(int amtChocolate) {
-        if (amtChocolate > 0) { // changed from >= to > to kill mutants
+        if (amtChocolate > 0) {
             this.amtChocolate = amtChocolate;
         } else {
             this.amtChocolate = 0;
@@ -47,7 +47,7 @@ public class Recipe {
      * @param amtCoffee The amount of coffee to set.
      */
     public void setAmtCoffee(int amtCoffee) {
-        if (amtCoffee > 0) { // changed from >= to > to kill mutants
+        if (amtCoffee > 0) {
             this.amtCoffee = amtCoffee;
         } else {
             this.amtCoffee = 0;
@@ -70,7 +70,7 @@ public class Recipe {
      * @param amtMilk The amount of milk to set.
      */
     public void setAmtMilk(int amtMilk) {
-        if (amtMilk > 0) { // changed from >= to > to kill mutants
+        if (amtMilk > 0) {
             this.amtMilk = amtMilk;
         } else {
             this.amtMilk = 0;
@@ -93,7 +93,7 @@ public class Recipe {
      * @param amtSugar The amount of sugar to set.
      */
     public void setAmtSugar(int amtSugar) {
-        if (amtSugar > 0) { // changed from >= to > to kill mutants
+        if (amtSugar > 0) {
             this.amtSugar = amtSugar;
         } else {
             this.amtSugar = 0;

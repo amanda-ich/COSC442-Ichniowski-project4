@@ -70,6 +70,7 @@ public class InventoryTest {
         assertEquals(0, inventory.getChocolate());
         inventory.setChocolate(-1);
         assertEquals(0, inventory.getChocolate());
+        assertFalse(inventory.getChocolate() < 0); // added to kill mutants
     }
 
     @Test
@@ -80,6 +81,7 @@ public class InventoryTest {
         assertEquals(0, inventory.getCoffee());
         inventory.setCoffee(-1);
         assertEquals(0, inventory.getCoffee());
+        assertFalse(inventory.getCoffee() < 0); // added to kill mutants
     }
 
     @Test
@@ -90,6 +92,7 @@ public class InventoryTest {
         assertEquals(0, inventory.getMilk());
         inventory.setMilk(-1);
         assertEquals(0, inventory.getMilk());
+        assertFalse(inventory.getMilk() < 0); // added to kill mutants
     }
 
     @Test
@@ -100,6 +103,7 @@ public class InventoryTest {
         assertEquals(0, inventory.getSugar());
         inventory.setSugar(-1);
         assertEquals(0, inventory.getSugar());
+        assertFalse(inventory.getSugar() < 0); // added to kill mutants
     }
 
     @Test
