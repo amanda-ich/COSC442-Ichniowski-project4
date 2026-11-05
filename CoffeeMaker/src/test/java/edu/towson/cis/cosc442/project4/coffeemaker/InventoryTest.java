@@ -43,6 +43,15 @@ public class InventoryTest {
         assertTrue(inventory.enoughIngredients(coffee));
         inventory.setCoffee(0);
         assertFalse(inventory.enoughIngredients(coffee));
+
+        inventory.setCoffee(5);
+        assertTrue(inventory.enoughIngredients(test));
+        inventory.setMilk(5);
+        assertTrue(inventory.enoughIngredients(test));
+        inventory.setChocolate(5);
+        assertTrue(inventory.enoughIngredients(test));
+        inventory.setSugar(5);
+        assertTrue(inventory.enoughIngredients(test));
     }
 
     @Test
