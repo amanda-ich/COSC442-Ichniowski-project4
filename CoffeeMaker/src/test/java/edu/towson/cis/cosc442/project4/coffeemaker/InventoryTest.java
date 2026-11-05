@@ -11,6 +11,7 @@ public class InventoryTest {
 
     Inventory inventory;
     Recipe coffee = new Recipe();
+    Recipe test = new Recipe();
 
     @BeforeEach
     void setup() {
@@ -22,6 +23,13 @@ public class InventoryTest {
         coffee.setAmtMilk(1);
         coffee.setAmtSugar(2);
         coffee.setAmtCoffee(5);
+
+        test.setName("test");
+        test.setPrice(5);
+        test.setAmtChocolate(5);
+        test.setAmtMilk(5);
+        test.setAmtSugar(5);
+        test.setAmtCoffee(5);
     
     }
 
@@ -35,6 +43,22 @@ public class InventoryTest {
         assertTrue(inventory.enoughIngredients(coffee));
         inventory.setCoffee(0);
         assertFalse(inventory.enoughIngredients(coffee));
+    }
+
+    @Test
+    void testEnoughIngredientsAll() {
+        inventory.setCoffee(0);
+        assertFalse(inventory.enoughIngredients(test));
+        inventory.setCoffee(5);
+        inventory.setMilk(0);
+        assertFalse(inventory.enoughIngredients(test));
+        inventory.setMilk(5);
+        inventory.setSugar(0);
+        assertFalse(inventory.enoughIngredients(test));
+        inventory.setSugar(5);
+        inventory.setChocolate(0);
+        assertFalse(inventory.enoughIngredients(test));
+        inventory.setChocolate(5);
     }
 
     @Test
