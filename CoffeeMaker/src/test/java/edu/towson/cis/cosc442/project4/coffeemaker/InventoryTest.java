@@ -66,6 +66,8 @@ public class InventoryTest {
     void testSetChocolate() {
         inventory.setChocolate(20);
         assertEquals(20, inventory.getChocolate());
+        inventory.setChocolate(0);
+        assertEquals(0, inventory.getChocolate());
         inventory.setChocolate(-1);
         assertEquals(0, inventory.getChocolate());
     }
@@ -74,6 +76,8 @@ public class InventoryTest {
     void testSetCoffee() {
         inventory.setCoffee(20);
         assertEquals(20, inventory.getCoffee());
+        inventory.setCoffee(0);
+        assertEquals(0, inventory.getCoffee());
         inventory.setCoffee(-1);
         assertEquals(0, inventory.getCoffee());
     }
@@ -82,6 +86,8 @@ public class InventoryTest {
     void testSetMilk() {
         inventory.setMilk(20);
         assertEquals(20, inventory.getMilk());
+        inventory.setMilk(0);
+        assertEquals(0, inventory.getMilk());
         inventory.setMilk(-1);
         assertEquals(0, inventory.getMilk());
     }
@@ -90,6 +96,8 @@ public class InventoryTest {
     void testSetSugar() {
         inventory.setSugar(20);
         assertEquals(20, inventory.getSugar());
+        inventory.setSugar(0);
+        assertEquals(0, inventory.getSugar());
         inventory.setSugar(-1);
         assertEquals(0, inventory.getSugar());
     }
