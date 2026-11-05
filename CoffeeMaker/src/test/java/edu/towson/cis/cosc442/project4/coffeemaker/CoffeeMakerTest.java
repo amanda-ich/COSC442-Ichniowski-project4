@@ -53,9 +53,9 @@ public class CoffeeMakerTest {
 
         cocoa.setName("cocoa");
         cocoa.setPrice(1);
-        cocoa.setAmtChocolate(0);
+        cocoa.setAmtChocolate(5);
         cocoa.setAmtMilk(0);
-        cocoa.setAmtSugar(5);
+        cocoa.setAmtSugar(0);
         cocoa.setAmtCoffee(0);
 
         coffeeMaker = new CoffeeMaker(); // empty coffee maker
@@ -178,5 +178,15 @@ public class CoffeeMakerTest {
         assertEquals(0, coffeeMaker2.makeCoffee(sugar, 1));
         assertEquals(0, coffeeMaker2.makeCoffee(sugar, 1));
         assertEquals(1, coffeeMaker2.makeCoffee(sugar, 1)); // try to make item with insufficient inventory
+    }
+
+    @Test
+    void testMakeCoffeeInventoryCheck() {
+        coffeeMaker3.makeCoffee(coffee, 5);
+        assertEquals(10, coffeeMaker3.checkInventory().getCoffee());
+        assertEquals(14, coffeeMaker3.checkInventory().getMilk());
+        assertEquals(13, coffeeMaker3.checkInventory().getSugar());
+        coffeeMaker3.makeCoffee(hotcoco, 4);
+        assertEquals(10, coffeeMaker3.checkInventory().getChocolate());
     }
 }
