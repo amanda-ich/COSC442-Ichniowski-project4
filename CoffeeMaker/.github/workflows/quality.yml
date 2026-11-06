@@ -29,6 +29,10 @@ jobs:
         working-directory: ./CoffeeMaker
         run: bash ./mvnw test-compile org.pitest:pitest-maven:mutationCoverage
 
-      # Add PIT mutation testing later
+      - name: Upload PIT report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pit-report
+          path: ./CoffeeMaker/target/pit-reports/
 
-      # Add PIT report artifact upload later
