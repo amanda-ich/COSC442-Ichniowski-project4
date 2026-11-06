@@ -23,7 +23,7 @@ jobs:
 
       - name: Run JUnit regression tests
         working-directory: ./CoffeeMaker
-        run: ./mvnw test    
+        run: bash ./mvnw test    
 
       # Add PIT mutation testing later
 
