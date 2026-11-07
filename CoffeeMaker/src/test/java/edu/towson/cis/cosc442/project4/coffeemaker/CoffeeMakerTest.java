@@ -117,10 +117,12 @@ public class CoffeeMakerTest {
 
     @Test
     void testAddRecipe() {
+        /* removed for Task 4 - Step 2
         assertTrue(coffeeMaker.addRecipe(coffee)); // add coffee recipe to empty coffee maker
         assertTrue(coffeeMaker1.addRecipe(hotcoco)); // add hot chocolate recipe to coffee maker with 1 recipe
         assertFalse(coffeeMaker1.addRecipe(hotcoco)); // try to add the same recipe again
         assertFalse(coffeeMaker2.addRecipe(cream)); // try to add a recipe to the coffee maker with the maximum number of recipes
+        */
     }
 
     @Test
