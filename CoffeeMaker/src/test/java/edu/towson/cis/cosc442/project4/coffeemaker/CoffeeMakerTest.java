@@ -83,7 +83,6 @@ public class CoffeeMakerTest {
 
     @Test
     void testAddInventory() {
-        /* removed for Task 4 - Step 2
         coffeeMaker3.addInventory(1, 0, 0,0);
         assertEquals(16, coffeeMaker3.checkInventory().getCoffee());
         coffeeMaker3.addInventory(0, 1, 0,0);
@@ -112,17 +111,14 @@ public class CoffeeMakerTest {
         assertTrue(coffeeMaker.addInventory(1, 1, 1, 1));
         assertTrue(coffeeMaker.addInventory(0, 0, 0,0));
         assertFalse(coffeeMaker.addInventory(-1, -1, -1, -1));
-        */
     }
 
     @Test
     void testAddRecipe() {
-        /* removed for Task 4 - Step 2
         assertTrue(coffeeMaker.addRecipe(coffee)); // add coffee recipe to empty coffee maker
         assertTrue(coffeeMaker1.addRecipe(hotcoco)); // add hot chocolate recipe to coffee maker with 1 recipe
         assertFalse(coffeeMaker1.addRecipe(hotcoco)); // try to add the same recipe again
         assertFalse(coffeeMaker2.addRecipe(cream)); // try to add a recipe to the coffee maker with the maximum number of recipes
-        */
     }
 
     @Test
