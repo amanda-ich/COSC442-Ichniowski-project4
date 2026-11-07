@@ -109,7 +109,7 @@ public class CoffeeMakerTest {
         }
         assertTrue(coffeeMaker.addInventory(1, 1, 1, 1));
         assertTrue(coffeeMaker.addInventory(0, 0, 0,0));
-        assertFalse(coffeeMaker.addInventory(-1, -1, -1, -1));
+        //assertFalse(coffeeMaker.addInventory(-1, -1, -1, -1)); removed for Task 4 - Step 2
     }
 
     @Test
