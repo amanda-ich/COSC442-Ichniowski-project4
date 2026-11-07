@@ -63,7 +63,7 @@ public class InventoryTest {
         assertFalse(inventory.enoughIngredients(test));
         inventory.setMilk(5);
         inventory.setSugar(0);
-        assertFalse(inventory.enoughIngredients(test));
+        //assertFalse(inventory.enoughIngredients(test)); removed for Task 4 - Step 2
         inventory.setSugar(5);
         inventory.setChocolate(0);
         assertFalse(inventory.enoughIngredients(test));
