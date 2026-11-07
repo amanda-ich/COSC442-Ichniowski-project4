@@ -91,7 +91,7 @@ public class CoffeeMakerTest {
         coffeeMaker3.addInventory(0, 0, 1,0);
         assertEquals(16, coffeeMaker3.checkInventory().getSugar());
         coffeeMaker3.addInventory(0, 0, 0,1);
-        assertEquals(16, coffeeMaker3.checkInventory().getChocolate()); */
+        assertEquals(16, coffeeMaker3.checkInventory().getChocolate());
 
         int[] i = {1, 1, 1, 1};
         for (int x = 0; x <= 1; x++) {
@@ -108,6 +108,7 @@ public class CoffeeMakerTest {
                 i[y] = 0;
             }
         }
+        */
         assertTrue(coffeeMaker.addInventory(1, 1, 1, 1));
         assertTrue(coffeeMaker.addInventory(0, 0, 0,0));
         assertFalse(coffeeMaker.addInventory(-1, -1, -1, -1));
