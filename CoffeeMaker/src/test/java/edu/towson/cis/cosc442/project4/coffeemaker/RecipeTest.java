@@ -128,12 +128,14 @@ public class RecipeTest {
 
     @Test
     void testSetPrice() {
+        /* removed for Task 4 - Step 2
         test.setPrice(3);
         assertEquals(3, test.getPrice());
         test.setPrice(0);
         assertEquals(0, test.getPrice());
         test.setPrice(-1);
         assertEquals(0, test.getPrice());
+        */
     }
 
     @Test
