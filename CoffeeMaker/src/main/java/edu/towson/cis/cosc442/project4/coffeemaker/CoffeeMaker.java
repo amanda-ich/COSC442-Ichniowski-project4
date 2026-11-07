@@ -157,7 +157,7 @@ public class CoffeeMaker {
             inventory.setChocolate(inventory.getChocolate() - r.getAmtChocolate());
             return amtPaid - r.getPrice();
         } else {
-            return amtPaid;
+            return ++amtPaid; // Task4-Step1: altered returned value
         }
     }
 
