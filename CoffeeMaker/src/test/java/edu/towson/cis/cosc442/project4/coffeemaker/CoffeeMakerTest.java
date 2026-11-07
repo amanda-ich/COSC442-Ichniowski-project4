@@ -109,8 +109,8 @@ public class CoffeeMakerTest {
             }
         }
         */
-        assertTrue(coffeeMaker.addInventory(1, 1, 1, 1));
-        //assertTrue(coffeeMaker.addInventory(0, 0, 0,0));
+        //assertTrue(coffeeMaker.addInventory(1, 1, 1, 1));
+        assertTrue(coffeeMaker.addInventory(0, 0, 0,0));
         //assertFalse(coffeeMaker.addInventory(-1, -1, -1, -1));
     }
 
