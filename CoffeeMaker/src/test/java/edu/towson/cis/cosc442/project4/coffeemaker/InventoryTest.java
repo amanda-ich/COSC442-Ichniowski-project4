@@ -40,11 +40,11 @@ public class InventoryTest {
 
     @Test
     void testEnoughIngredients() {
+        /* removed for Task 4 - Step 2
         assertTrue(inventory.enoughIngredients(coffee));
         inventory.setCoffee(0);
         assertFalse(inventory.enoughIngredients(coffee));
 
-        /* removed for Task 4 - Step 2
         inventory.setCoffee(5);
         assertTrue(inventory.enoughIngredients(test));
         inventory.setMilk(5);
